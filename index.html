@@ -131,17 +131,17 @@
       document.getElementById('time').innerHTML = timeString;
 
       if (hours >= 0 && hours < 6) {
-        document.getElementById('greeting').innerHTML = '现在是深夜，祝你有一个好梦！';
+        document.getElementById('greeting').innerHTML = 'It is late at night. Wish you a good dream!';
       } else if (hours >= 6 && hours < 12) {
-        document.getElementById('greeting').innerHTML = '早上好！新的一天开始了。';
+        document.getElementById('greeting').innerHTML = 'Good morning! A new day has begun.';
       } else if (hours >= 12 && hours < 14) {
-        document.getElementById('greeting').innerHTML = '中午好！希望你有一个愉快的午餐。';
+        document.getElementById('greeting').innerHTML = 'Good noon! Hope you have a pleasant lunch.';
       } else if (hours >= 14 && hours < 18) {
-        document.getElementById('greeting').innerHTML = '下午好！祝你工作顺利。';
+        document.getElementById('greeting').innerHTML = 'Good afternoon! Wish you a smooth work.';
       } else if (hours >= 18 && hours < 22) {
-        document.getElementById('greeting').innerHTML = '晚上好！希望你度过一个愉快的夜晚。';
+        document.getElementById('greeting').innerHTML = 'Good evening! Hope you have a pleasant night.';
       } else {
-        document.getElementById('greeting').innerHTML = '现在是深夜，请注意休息。';
+        document.getElementById('greeting').innerHTML = 'It is late at night. Please pay attention to rest.';
       }
     }
 
