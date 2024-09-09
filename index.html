@@ -133,47 +133,16 @@
       document.getElementById('time').innerHTML = timeString;
 
       if (hours >= 0 && hours < 6) {
-        var colors = ['#99CCFF', '#66CCFF', '#33CCFF']; // 凌晨的颜色选项
-        if (currentColor === '') {
-          // 如果当前颜色为空，随机选择一个颜色并设置
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'It is late at night. Wish you a good dream!';
       } else if (hours >= 6 && hours < 12) {
-        var colors = ['#FFFF99', '#CCFF99', '#99FF99']; // 早上的颜色选项
-        if (currentColor === '') {
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'Good morning! A new day has begun.';
       } else if (hours >= 12 && hours < 14) {
-        var colors = ['#FFCC99', '#FFCC66', '#FFCC33']; // 中午的颜色选项
-        if (currentColor === '') {
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'Good noon! Hope you have a pleasant lunch.';
       } else if (hours >= 14 && hours < 18) {
-        var colors = ['#CCFFCC', '#99FFCC', '#66FFCC']; // 下午的颜色选项
-        if (currentColor === '') {
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'Good afternoon! Wish you a smooth work.';
       } else if (hours >= 18 && hours < 22) {
-        var colors = ['#FFCCFF', '#FF99FF', '#FF66FF']; // 晚上的颜色选项
-        if (currentColor === '') {
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'Good evening! Hope you have a pleasant night.';
       } else {
-        var colors = ['#CCFFFF', '#99FFFF', '#66FFFF']; // 深夜的颜色选项
-        if (currentColor === '') {
-          currentColor = colors[Math.floor(Math.random() * colors.length)];
-          document.body.style.backgroundColor = currentColor;
-        }
         document.getElementById('greeting').innerHTML = 'It is late at night. Please pay attention to rest.';
       }
     }
