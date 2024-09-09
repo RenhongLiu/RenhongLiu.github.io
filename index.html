@@ -4,40 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liu Renhong's Resume</title>
+  <title>Liu Renhong</title>
   <style>
     body {
       font-family: Arial, sans-serif;
     }
 
- .container {
+.container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
     }
 
- .section {
+.section {
       margin-bottom: 20px;
     }
 
- .section h2 {
+.section h2 {
       margin-bottom: 10px;
     }
 
- .section p {
+.section p {
       margin: 0;
     }
 
- .project {
+.project {
       margin-bottom: 10px;
     }
 
- .project a {
+.project a {
       color: #007bff;
       text-decoration: none;
     }
 
- .hline {
+.hline {
       border-bottom: 1px solid #ccc;
       margin-top: 5px;
       margin-bottom: 15px;
@@ -48,6 +48,10 @@
 <body>
   <div class="container">
     <h1><b>Liu Renhong</b></h1>
+    <div class="time-section">
+      <p id="time"></p>
+      <p id="greeting"></p>
+    </div>
     <div class="section">
       <div class="hline"></div>
       <h2><b>Contact Information</b></h2>
@@ -118,13 +122,31 @@
     </div>
   </div>
   <script>
-    var birthDate = new Date(1999, 0, 17);
-    var currentDate = new Date();
-    var age = currentDate.getFullYear() - birthDate.getFullYear();
-    if (currentDate.getMonth() < birthDate.getMonth() || (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() < birthDate.getDate())) {
-      age--;
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var timeString = hours + ':' + minutes + ':' + seconds;
+      document.getElementById('time').innerHTML = timeString;
+
+      if (hours >= 0 && hours < 6) {
+        document.getElementById('greeting').innerHTML = '现在是深夜，祝你有一个好梦！';
+      } else if (hours >= 6 && hours < 12) {
+        document.getElementById('greeting').innerHTML = '早上好！新的一天开始了。';
+      } else if (hours >= 12 && hours < 14) {
+        document.getElementById('greeting').innerHTML = '中午好！希望你有一个愉快的午餐。';
+      } else if (hours >= 14 && hours < 18) {
+        document.getElementById('greeting').innerHTML = '下午好！祝你工作顺利。';
+      } else if (hours >= 18 && hours < 22) {
+        document.getElementById('greeting').innerHTML = '晚上好！希望你度过一个愉快的夜晚。';
+      } else {
+        document.getElementById('greeting').innerHTML = '现在是深夜，请注意休息。';
+      }
     }
-    document.getElementById('age').innerHTML = age;
+
+    setInterval(updateTime, 1000);
+    updateTime();
   </script>
 </body>
 
