@@ -148,8 +148,17 @@
       }
     }
 
+    function calculateAge() {
+      var birthDate = new Date('1999.01.17');
+      var currentDate = new Date();
+      var ageDiff = currentDate - birthDate;
+      var ageDate = new Date(ageDiff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
     setInterval(updateTime, 1000);
     updateTime();
+    document.getElementById('age').innerHTML = calculateAge();
   </script>
 </body>
 
