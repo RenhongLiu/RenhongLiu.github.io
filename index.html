@@ -2,164 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liu Renhong</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-.container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-.section {
-      margin-bottom: 20px;
-    }
-
-.section h2 {
-      margin-bottom: 10px;
-    }
-
-.section p {
-      margin: 0;
-    }
-
-.project {
-      margin-bottom: 10px;
-    }
-
-.project a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-.hline {
-      border-bottom: 1px solid #ccc;
-      margin-top: 5px;
-      margin-bottom: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liu Renhong</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1><b>Liu Renhong</b></h1>
-    <div class="time-section">
-      <p id="time"></p>
-      <p id="greeting"></p>
-    </div>
-    <div class="section">
-      <div class="hline"></div>
-      <h2><b>Contact Information</b></h2>
-      <p><b>Gmail</b>: renhongliu17@gmail.com</p>
-      <p><b>Email</b>: 15937790341@163.com</p>
-      <p><b>Github</b>: <a href="https://github.com/RenhongLiu">https://github.com/RenhongLiu</a></p>
-    </div>
-    <div class="section">
-      <h2><b>Personal Information</b></h2>
-      <p><b>Gender</b>: Male</p>
-      <p><b>Date of Birth</b>: 1999.01.17</p>
-      <p><b>Age</b>: <span id="age"></span></p>
-    </div>
-    <div class="section">
-      <div class="hline"></div>
-      <h2><b>Educational Background</b></h2>
-      <p><b>Zhengzhou University</b> - Computer Science and Technology | <b>Undergraduate</b> (2017.09 - 2021.07)</p>
-      <p><b>Major Courses</b>: Data Structure, Algorithm Design and Analysis, Database System Principles, C Language Programming, Java, Compilation Principles, Computer Network, Operating System,...</p>
-      <p><b>University of Duisburg-Essen</b> - Computer Engineering (Computer Engineering) | <b>Postgraduate</b> (2022.05 - Present)</p>
-      <p><b>Major Courses</b>: Distributed Systems, Peer-to-Peer Systems, Development of Safe and Secure Software, Formal Specification of Software Systems, Pattern and Component based Software Development, Cloud, Web & Mobile,...</p>
-    </div>
-    <div class="section">
-      <div class="hline"></div>
-      <h2><b>Project Experience</b></h2>
-      <div class="project">
-        <h3><b>Drink Mixing Machine</b></h3>
-        <p><b>Control End Development</b> (PCB + Python + C/C++) (2023.10 - 2024.02)</p>
-        <p><b>Project Introduction</b>: The client GUI displays the list of available beverages. After selecting a beverage, the client retrieves the flow rate of the dispenser from the configuration file and calculates the time required to dispense the beverage and the discharge count required to fill the cup. The time information will be sent to the PCB controller to which the corresponding dispenser belongs. The dispenser will control the opening time to allow the beverage to flow out according to the time information.</p>
-        <p><b>Project Responsibilities</b>: Optimize the serial communication time at the control end, measure the torque of the dispenser motor more frequently to achieve more precise dispenser control; on this basis, optimize the polling logic of the control end dispenser to make the dispenser work precisely according to the time parameters.</p>
-        <p><b>Project Address</b>: <a href="https://github.com/ES-EDU-SIEGMA/Embedded-Controller">https://github.com/ES-EDU-SIEGMA/Embedded-Controller</a></p>
-      </div>
-      <div class="project">
-        <h3><b>WeChat Mini Program Shop</b></h3>
-        <p><b>Development</b> (JS + WXML + WXSS) (2021.03 - 2021.06)</p>
-        <p><b>Project Introduction</b>: Users log in to the shop, browse products, add products to the shopping cart, submit orders, pay orders, and view orders; backend user management, order management, and product management. Use the WeChat Mini Program cloud development database and send requests to the database through wx.request to obtain database data.</p>
-        <p><b>Project Responsibilities</b>: Responsible for the development of the entire project.</p>
-      </div>
-      <div class="project">
-        <h3><b>Work Order Repair System</b></h3>
-        <p><b>Front-end Development</b> (Vue + Element UI) (2020.09 - 2020.10)</p>
-        <p><b>Project Introduction</b>: Users submit work orders, view the progress of work orders, and provide feedback and evaluations; repairers receive work orders, process work orders, and view historical work orders; the management end manages work orders, personnel, equipment, and generates reports.</p>
-        <p><b>Project Responsibilities</b>: Responsible for the functional development of the repairer end. Work order list, sort by work order priority and urgency, view historical work orders, work order feedback information, etc. Work order details page, modify and upload pictures, record maintenance details, materials, and conditions, etc.</p>
-      </div>
-      <div class="project">
-        <h3><b>Online Judge System</b></h3>
-        <p><b>Front-end Development</b> (Vue + Element UI) (2019.10 - 2020.06)</p>
-        <p><b>Project Introduction</b>: Submit code, send it to the back-end judgment machine, and the results are sent back to the evaluation result page. Front-end question list, question details, answer page, evaluation result interface, personal center. Post threads in the discussion area, leave comments and replies, etc.</p>
-        <p><b>Project Responsibilities</b>: Responsible for the front-end project framework construction and functional testing, and responsible for the development of the question list page and the thread list page.</p>
-      </div>
-      <div class="project">
-        <h3><b>Various Course Projects</b></h3>
-        <p>(2017.09 - 2021.06)</p>
-        <p>C Language, Address Book; Data Structure, Flight Inquiry System; Principles of Microcomputer and Interface Technology, Assembly Language to Write Switch to Control Different Effects of LED; Compilation Principles, Lexical Analyzer; Database System Principles, Login Verification System, Back-end Java to Prevent Comment-type SQL Injection, SQL Database Trigger; Java and Android, Java Mobile Shop.</p>
-      </div>
-    </div>
-    <div class="section">
-      <div class="hline"></div>
-      <h2><b>Self-Evaluation</b></h2>
-      <p><b>Team Collaboration</b>: Have multiple team project experiences and use Github for project management;</p>
-      <p><b>Task-Driven</b>: Highly efficient when there are clear task goals;</p>
-      <p><b>Quick Learning</b>: Able to quickly get started with new languages and projects, but limited to the language usage and project development level;</p>
-      <p><b>Practical Ability</b>: Good at searching for documentation, using search engines and large language models to solve problems.</p>
-    </div>
-    <div class="section">
-      <div class="hline"></div>
-      <h2><b>Skills</b></h2>
-      <p><b>Languages</b>: CET-6, German B2</p>
-      <p><b>Programming</b>: C, Java, Python, JSON, JavaScript, HTML5, CSS3, Vue3, Element UI, XML, Markdown, Github, SQL</p>
-    </div>
-  </div>
-  <script>
-    var currentColor = ''; // 存储当前颜色
+    <h1>Liu Renhong</h1>
+    <b><p id="time"></p></b>
+    <b><p id="greeting"></p></b>
+    <h2><b>Personal Information</b></h2>
+    <ul>
+        <li><b>Gender</b>: Male</li>
+        <li><b>Date of Birth</b>: January 17, 1999</li>
+        <li><b>Age</b>: <span id="age"></span></li>
+    </ul>
+    <h2><b>Contact Information</b></h2>
+    <ul>
+        <li><b>Gmail</b>: renhongliu17@gmail.com</li>
+        <li><b>Email</b>: 15937790341@163.com</li>
+        <li><b>Github</b>: <a href="https://github.com/RenhongLiu">https://github.com/RenhongLiu</a></li>
+    </ul>
+    <h2><b>Education</b></h2>
+    <ul>
+        <li><b>Zhengzhou University - Computer Science and Technology (Undergraduate), 2017.09 - 2021.07</b>
+            <ul>
+                <li><b>Major Courses</b>: Data Structure, Algorithm Design and Analysis, Database System Principles, C
+                    Language Programming, Java, Compilation Principles, Computer Network, Operating System,...</li>
+            </ul>
+        </li>
+        <li><b>University of Duisburg-Essen - Computer Engineering (Computer Engineering) (Postgraduate), 2022.05 -
+            Present</b>
+            <ul>
+                <li><b>Major Courses</b>: Distributed Systems, Peer-to-Peer Systems, Development of Safe and Secure
+                    Software, Formal Specification of Software Systems, Pattern and Component based Software
+                    Development, Cloud, Web & Mobile,...</li>
+            </ul>
+        </li>
+    </ul>
+    <h2><b>Project Experience</b></h2>
+    <ul>
+        <li><b>Drink Mixing Machine - Control End Development (PCB + Python + C/C++) (2023.10 - 2024.02)</b>
+            <ul>
+                <li><b>Project Summary</b>: Client GUI shows beverage list. Selecting a beverage triggers calculation of
+                    dispensing time and count. Time info sent to PCB controller for dispenser to open and let
+                    beverage flow.</li>
+                <li><b>Project Responsibilities</b>: Optimized serial communication time and dispenser motor torque
+                    measurement for precise control. Also optimized polling logic.</li>
+                <li><b>Project Address</b>: <a
+                        href="https://github.com/ES-EDU-SIEGMA/Embedded-Controller">https://github.com/ES-EDU-SIEGMA/Embedded-Controller</a>
+                </li>
+            </ul>
+        </li>
+        <li><b>WeChat Mini Program Shop - Development (JS + WXML + WXSS) (2021.03 - 2021.06)</b>
+            <ul>
+                <li><b>Project Summary</b>: Users can log in, browse products, add to cart, submit/pay/ view orders.
+                    Backend manages users, orders, and products. Uses mini program cloud database.</li>
+                <li><b>Project Responsibilities</b>: Responsible for entire project development.</li>
+            </ul>
+        </li>
+        <li><b>Work Order Repair System - Front-end Development (Vue + Element UI) (2020.09 - 2020.10)</b>
+            <ul>
+                <li><b>Project Summary</b>: Users submit/view work orders and give feedback. Repairers receive/process/view
+                    historical work orders. Management end manages work orders, personnel, and equipment and
+                    generates reports.</li>
+                <li><b>Project Responsibilities</b>: Responsible for repairer end functional development, including work
+                    order list sorting, viewing historical orders, and feedback. Also for work order details page
+                    modifications.</li>
+            </ul>
+        </li>
+        <li><b>Online Judge System - Front-end Development (Vue + Element UI) (2019.10 - 2020.06)</b>
+            <ul>
+                <li><b>Project Summary</b>: Submit code for back-end judgment and receive results on evaluation page.
+                    Features question list, details, answer page, and discussion area.</li>
+                <li><b>Project Responsibilities</b>: Responsible for front-end framework construction and testing, and
+                    development of question and thread list pages.</li>
+            </ul>
+        </li>
+        <li><b>Various Course Projects (2017.09 - 2021.06)</b>
+            <ul>
+                <li>C Language: Address Book</li>
+                <li>Data Structure: Flight Inquiry System</li>
+                <li>Principles of Microcomputer and Interface Technology: Assembly Language for LED control</li>
+                <li>Compilation Principles: Lexical Analyzer</li>
+                <li>Database System Principles: Login Verification System with SQL injection prevention and database
+                    trigger</li>
+                <li>Java and Android: Java Mobile Shop</li>
+            </ul>
+        </li>
+    </ul>
+    <h2><b>Skills</b></h2>
+    <ul>
+        <li>Languages: CET-6, German B2</li>
+        <li>Programming: C, Java, Python, JSON, JavaScript, HTML5, CSS3, Vue3, Element UI, XML, Markdown, Github,
+            SQL</li>
+    </ul>
+    <h2><b>Self-Assessment</b></h2>
+    <ul>
+        <li>Team Collaboration: Have multiple team project experiences and use Github for project management.</li>
+        <li>Task-Driven: Highly efficient when there are clear task goals.</li>
+        <li>Quick Learning: Able to quickly get started with new languages and projects, but limited to the language
+            usage and project development level.</li>
+        <li>Practical Ability: Good at searching for documentation, using search engines and large language models
+            to solve problems.</li>
+    </ul>
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('time').innerHTML = timeString;
 
-    function updateTime() {
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
-      var timeString = hours + ':' + minutes + ':' + seconds;
-      document.getElementById('time').innerHTML = timeString;
+            if (hours >= 0 && hours < 6) {
+                document.getElementById('greeting').innerHTML = 'It is late at night. Wish you a good dream!';
+            } else if (hours >= 6 && hours < 12) {
+                document.getElementById('greeting').innerHTML = 'Good morning! A new day has begun.';
+            } else if (hours >= 12 && hours < 14) {
+                document.getElementById('greeting').innerHTML = 'Good noon! Hope you have a pleasant lunch.';
+            } else if (hours >= 14 && hours < 18) {
+                document.getElementById('greeting').innerHTML = 'Good afternoon! Wish you a smooth work.';
+            } else if (hours >= 18 && hours < 22) {
+                document.getElementById('greeting').innerHTML = 'Good evening! Hope you have a pleasant night.';
+            } else {
+                document.getElementById('greeting').innerHTML = 'It is late at night. Please pay attention to rest.';
+            }
+        }
 
-      if (hours >= 0 && hours < 6) {
-        document.getElementById('greeting').innerHTML = 'It is late at night. Wish you a good dream!';
-      } else if (hours >= 6 && hours < 12) {
-        document.getElementById('greeting').innerHTML = 'Good morning! A new day has begun.';
-      } else if (hours >= 12 && hours < 14) {
-        document.getElementById('greeting').innerHTML = 'Good noon! Hope you have a pleasant lunch.';
-      } else if (hours >= 14 && hours < 18) {
-        document.getElementById('greeting').innerHTML = 'Good afternoon! Wish you a smooth work.';
-      } else if (hours >= 18 && hours < 22) {
-        document.getElementById('greeting').innerHTML = 'Good evening! Hope you have a pleasant night.';
-      } else {
-        document.getElementById('greeting').innerHTML = 'It is late at night. Please pay attention to rest.';
-      }
-    }
+        function calculateAge() {
+            var birthDate = new Date('1999.01.17');
+            var currentDate = new Date();
+            var ageDiff = currentDate - birthDate;
+            var ageDate = new Date(ageDiff);
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
 
-    function calculateAge() {
-      var birthDate = new Date('1999.01.17');
-      var currentDate = new Date();
-      var ageDiff = currentDate - birthDate;
-      var ageDate = new Date(ageDiff);
-      return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
-
-    setInterval(updateTime, 1000);
-    updateTime();
-    document.getElementById('age').innerHTML = calculateAge();
-  </script>
+        setInterval(updateTime, 1000);
+        updateTime();
+        document.getElementById('age').innerHTML = calculateAge();
+    </script>
 </body>
 
 </html>
